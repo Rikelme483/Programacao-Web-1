@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <script>
+        let nome, salario, porcentagem, novosalario;
+
+        nome = "Carlos";
+
+        salario = parseFloat(prompt("Digite o Salário de Carlos:" , "Digite aqui"));
+        porcentagem = parseFloat(prompt("Digite a % de aumento:" , "Digite aqui"))
+
+        porcentagem = porcentagem / 100;
+        porcentagem = porcentagem * salario;
+        novosalario = salario + porcentagem;
+        
+        document.write("O aumento em Reais é: " + "R$" + porcentagem +"<br>");
+        document.write("O Salário de Carlos agora é: " + "R$" + novosalario);
+
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

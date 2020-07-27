@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body{
+            background-color: black;
+            color: crimson;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        let produto;
+        let preço;
+        let total = 0;
+        let fim;
+
+        do{
+            alert("Produto");
+            produto = prompt("Digite um produto:" , "Digite aqui");
+            alert("Preço");
+            preço = parseFloat(prompt("Digite o preço:" , "Digite aqui"));
+            // nesta variavel, so encerrará o loop quando o usuário digitar fim
+            fim = prompt("Digite fim para sair. Se não, tecle enter:")
+
+            document.write(produto + ": R$ " + preço.toFixed(2) + "<br>");
+
+            total = total + preço;
+
+        }while(fim != "fim"){
+            "<br>"
+           document.write("O total dos produtos é: R$ " + total.toFixed(2));
+        };
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

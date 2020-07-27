@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        body{
+            background-color: black;
+            color: crimson;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        let material = [];
+        let qtd;
+        let i;
+        
+        alert("Material escolar");
+        qtd = parseFloat(prompt("Quantos itens deseja?", "Digite aqui"));
+       
+
+        for(i = 0; i < qtd; i++){  //com a propriedade parsefloat(i+1) ele mostra qual é o item atual da listagem, orientando melhor o usuário
+            material[i] = (prompt("Digite o item: " + parseFloat(i + 1) , "Digite aqui"));
+            document.write( parseFloat(i + 1) + ": " + material[i] + "<br>");
+        }
+
+       
+       
+
+        
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

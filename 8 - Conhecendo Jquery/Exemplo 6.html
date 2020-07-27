@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6</title>
+    <style>
+        body{
+            background-color: c;
+        }
+    </style>
+    <script src="C:/Jquery/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#fundo1").click(function(){
+              $("#corpo").css({ backgroundColor: "Yellow" , color: "Green" });
+          });
+          $("#fundo2").click(function(){
+              $("#corpo").css({ backgroundColor: "Green" , color: "White" });
+          });
+          $("#fundo3").click(function(){
+              $("#corpo").css({ backgroundColor: "Black" , color: "Cyan" });
+          })
+      });
+    </script>
+</head>
+<body id="corpo">
+    <h3>
+        <div id="fundo1">
+            Fundo 1
+        </div> <p></p>
+        <div id="fundo2">
+            Fundo 2
+        </div> <p></p>
+        <div id="fundo3">
+            Fundo 3
+        </div>
+
+
+
+    </h3>
+
+
+    
+</body>
+</html>

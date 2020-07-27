@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <style>
+        body{
+            background-color: chartreuse;
+            color:mediumblue;
+            font-size: 15pt;
+        }
+
+    </style>
+    <script>
+        let produto = new Array();
+        let total;
+        /*com a propriedade array, fiz este comando para o usuário digitar 
+         o preço de 5 produtos e armazená-los em uma úica variavel*/
+        produto [0] = parseFloat(prompt("Valor produto 1:" , "Digite aqui"));
+        produto [1] = parseFloat(prompt("Valor produto 2:" , "Digite aqui"));
+        produto [2] = parseFloat(prompt("Valor produto 3:" , "Digite aqui"));
+        produto [3] = parseFloat(prompt("Valor produto 4:" , "Digite aqui"));
+        produto [4] = parseFloat(prompt("Valor produto 5:" , "Digite aqui"));
+        // calculo total dos 5 produtos digitados
+        total = produto[0]+produto[1]+produto[2]+produto[3]+produto[4];
+
+        document.write("Valor do produto 1: R$" + produto[0] + "<br>");
+        document.write("Valor do produto 2: R$" + produto[1] + "<br>");
+        document.write("Valor do produto 3: R$" + produto[2] + "<br>");
+        document.write("Valor do produto 4: R$" + produto[3] + "<br>");
+        document.write("Valor do produto 5: R$" + produto[4] + "<br>");
+        /*com a propriedade .toFixed(2), pode-se colocar apenas dois valores em centavos no
+        calculo total*/
+        document.write("Total: R$" + total.toFixed(2));
+        
+
+
+
+
+    </script>
+</head>
+<body>
+
+
+
+    
+    
+</body>
+</html>

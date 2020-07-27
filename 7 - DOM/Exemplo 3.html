@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3</title>
+    <style>
+        body{
+            background-color:coral;
+            font-size: 20pt;
+        }
+
+    </style>
+    <script>
+        function mudaTexto(texto){
+            let paragrafo = document.getElementById("texto");
+            paragrafo.innerHTML = texto;
+        }
+
+    </script>
+</head>
+<body>
+    <p id="texto"> Curso de Javascript </p>
+
+    <br>
+    <input type="button" value="NovoTexto" onclick="mudaTexto('Programação Web')">
+    <input type="button" value="MesmoTexto" onclick="mudaTexto('Curso de Javascript')">
+
+    
+</body>
+</html>

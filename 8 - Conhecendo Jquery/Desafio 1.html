@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        fieldset{
+            margin: 30px 40% 0 15%;
+            border-width: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+            text-align: center;
+            float: left;
+            color: crimson;
+            font-size: 20px;
+            border-color: crimson;
+            font-weight: bold;
+        }
+        .botao{
+            width: 100px;
+            font-size: 15px;
+
+        }
+        .numero{
+            width: 200px;
+            font-size: 15px;
+
+        }
+        body{
+            background-image: url("Imagens/FundoKratos3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        input{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="C:/Jquery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnSoma").click(function(){
+                let n1 = parseFloat($("#num1").val());
+                let n2 = parseFloat($("#num2").val());
+                
+                let soma = n1 + n2;
+
+                $("#result").val(soma);
+            });
+            $("#btnReset").click(function(){
+                let n1 = parseFloat($("#num1").val(" "));
+                let n2 = parseFloat($("#num2").val(" "));
+
+                $("#result").val(" ");
+            });
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <form action="" id="form">
+            1º Número: <p></p>
+            <input class="numero" type="number" id="num1" value="" placeholder="Digite aqui"> <br> <br>
+            2º Número: <p></p>
+            <input class="numero" type="number" id="num2" value="" placeholder="Digite aqui"> <br> <br>
+            <input type="button" class="botao" value="Somar"  id="btnSoma"> <input  class="botao" type="button" value="Reset" id="btnReset"> <br> <br>
+
+            Resultado: <p></p>
+            <input class="numero" type="text" id="result" readonly> <br> <br>
+
+        </form>
+    </fieldset>
+
+
+</body>
+</html>

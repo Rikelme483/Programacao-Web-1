@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 5</title>
+    <script src="C:/Jquery/jquery-3.5.1.min.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      
+        #bloco{
+            margin: 20px;
+            width: 200px;
+            height: 125px;
+            background-color: red;
+            border-style: solid;
+            border-color: black;
+        }
+        p{
+            margin-top: 20px;
+            margin-left: 20px;   
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#bloco").mouseenter(function(){
+                $("p").text("Mouse sobre a div!!");
+            }).mouseleave(function(){
+            
+            $("p").text("Mouse fora da div!!");
+            })
+        });
+
+
+    </script>
+</head>
+<body>
+    
+    <div id="bloco"> Oi </div> 
+    <p>  </p>
+
+
+    
+</body>
+</html>

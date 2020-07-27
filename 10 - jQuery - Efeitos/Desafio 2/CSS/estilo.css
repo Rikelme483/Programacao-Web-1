@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+*{
+    font-family: Mukta;
+}
+
+
+/* Personalização Menu */
+
+header{
+    margin-top: 15px;
+}
+nav{
+    display:block; 
+	border:1px solid #222; 
+	position:relative;background:#6a6a6a;
+	z-index:10; 
+	font:20px Tahoma, Sans-serif;
+}
+nav li{
+    position: relative;
+    text-align: center;
+    float: left;
+    padding-top: 2px;
+}
+nav li a{
+    text-decoration: none;
+    color: #eee;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #222;
+    display: block;
+    padding-left: 30px;
+}
+nav li:first-child a{
+    border-left: none;
+}
+nav ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+nav ul ul{
+    display: none;
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+nav ul ul li{
+    float: none;
+    background: #000;
+    opacity: 0.8;
+}
+nav ul ul a{
+    padding: 7px;
+    border: none; 
+    font-size: 20px;
+}
+nav ul ul li:hover{
+    background-color:#555; 
+	opacity:1;
+}
+nav ul li ul.sublista{
+    display: none;
+}
+nav ul li:hover ul.sublista {
+	display:block;
+}
+
+/* Personalização Carrossel */ 
+
+img{
+    width: 800px;
+    height: 250px;
+    border-radius: 10px;
+}
+.carrossel{
+    padding: 20px;
+    background-color: #222;
+    position: relative;
+    text-align: center; 
+}
+#slide{
+    display: inline-block;
+    width: 800px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 0;
+	overflow: hidden; 
+    position: relative;
+    list-style: none;
+}
+.btn1, .btn2{
+    width: 50px;
+    height: 50px;
+}
+.btn1{
+    margin-bottom: 100px;
+}
+.btn2{
+    margin-bottom: 100px;
+}
+.btn1:hover , .btn2:hover{
+    opacity: 0.8;
+}

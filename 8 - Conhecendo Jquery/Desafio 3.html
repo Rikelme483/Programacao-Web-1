@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        fieldset{
+            
+            margin-right: 60%;
+            margin-left: 5%;
+            border-width: 20px;
+            padding-top: 10px;
+            padding-left: 20px;
+            text-align: left;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 20px;
+            border-color: black;
+        }
+        .resultado{
+            width: 90%;
+        }
+        body{
+            background-image: url("Imagens/FundoKratos4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        input{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="C:/Jquery/jquery-3.5.1.min.js""></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnSoma").click(function(){
+                let n1 = parseFloat($("#num1").val());
+                let n2 = parseFloat($("#num2").val());
+
+                let soma = n1 + n2;
+
+                $("#result").val(soma.toFixed(2));
+
+            });
+            $("#btnSubt").click(function(){
+                let n1 = parseFloat($("#num1").val());
+                let n2 = parseFloat($("#num2").val());
+
+                let subt = n1 - n2;
+
+                $("#result").val(subt.toFixed(2));
+            });
+            $("#btnMult").click(function(){
+                let n1 = parseFloat($("#num1").val());
+                let n2 = parseFloat($("#num2").val());
+
+                let mult = n1 * n2;
+
+                $("#result").val(mult.toFixed(2));
+            });
+            $("#btnDivid").click(function(){
+                let n1 = parseFloat($("#num1").val());
+                let n2 = parseFloat($("#num2").val());
+
+                let div = n1 / n2;
+
+                if(n2 == 0){
+                    div = "Não existe número dividido por 0!!!";
+                    $("#result").val(div);
+                }else{
+                    $("#result").val(div.toFixed(2));
+                }
+                
+            });
+            $("#btnReset").click(function(){
+                let n1 = parseFloat($("#num1").val(" "));
+                let n2 = parseFloat($("#num2").val(" "));
+
+                $("#num1").val(" ");
+                $("#num2").val(" ");
+                $("#result").val(" ");     
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <form action="" id="form">
+            1º Número: <br>
+            <input type="number" id="num1" value="" placeholder="Digite aqui"> <br> <br>
+            2º Número: <br>
+            <input type="number" id="num2" value="" placeholder="Digite aqui"> <br> <br>
+
+            <input type="button" value="Somar" id="btnSoma"> <input type="button" value="Subtrair" id="btnSubt"> <input type="button" id="btnMult" value="Multiplicar"> <input type="button" id="btnDivid" value="Dividir"> <input type="button" value="Reset" id="btnReset"> <br> <br>
+            
+            Resultado: <br>
+            <input type="text" class="resultado" id="result" readonly value="" >
+        
+        
+        </form>
+    </fieldset>
+
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+        body{
+            background-color: black;
+            color: crimson;
+            font-size: 16pt;
+        }
+    </style>
+    <script>
+        let nota = new Array();
+        let media;
+        //comandos para usuario digitar
+        nota [0] = parseFloat(prompt("Primeira nota:" , "Digite aqui"));
+        nota [1] = parseFloat(prompt("Segunda nota:" , "Digite aqui"));
+        nota [2] = parseFloat(prompt("Terceira nota:" , "Digite aqui"));
+        nota [3] = parseFloat(prompt("Quarta nota:" , "Digite aqui"));
+
+        //calculo da media do aluno
+        media = ( nota[0] + nota[1] + nota[2] + nota[3] ) / 4 ;
+
+        document.write("Primeira nota: " + nota[0] + "<br>");
+        document.write("Segunda nota: " + nota[1] + "<br>");
+        document.write("Terceira nota: " + nota[2] + "<br>");
+        document.write("Quarta nota: " + nota[3] + "<br>");
+        //propriedade toFixed(2) para mostrar valores quebrados da nota
+        document.write("Média: " + media.toFixed(1) + "<br>");
+
+        //comando if else para determinar se o aluno foi aprovado, está de recuperação ou reprovado :(
+        if(media >= 7){
+            document.write("Está aprovado!!");
+        }else if(media < 5){
+            document.write("Está reprovado!!");
+        }else{
+            document.write("Recuperação!!");
+        }
+
+
+
+    </script>
+<body>
+    
+</body>
+</html>

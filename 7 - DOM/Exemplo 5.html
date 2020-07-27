@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 5</title>
+    <style>
+        body{
+            background-color:coral;
+            font-size: 13pt;
+        }
+
+    </style>
+    <script>
+        function calcular(){
+            let tag = document.forms["curso"];
+            let nome = tag.elements["fNome"].value;
+            let nota1 = parseFloat(tag.elements["nota1"].value);
+            let nota2 = parseFloat(tag.elements["nota2"].value);
+            let media = (nota1 + nota2) / 2;
+            alert("Olá " + nome + " \n sua média é: " + media);
+        }
+
+
+    </script>
+</head>
+<body>
+    <form action="$" method="POST" name="curso" >
+        <label for=""> Nome </label> <br>
+        <input type="text" name="fNome" placeholder="digite aqui"> <br>
+        <label for=""> Nota 2 </label> <br>
+        <input type="text" name="nota1" placeholder="digite sua nota"> <br>
+        <label for=""> Nota 2 </label> <br>
+        <input type="text" name="nota2" placeholder="digite sua nota"> <br>
+        <input type="button" value="Confirmar" onclick="calcular()">
+    </form>
+
+
+
+
+    
+</body>
+</html>

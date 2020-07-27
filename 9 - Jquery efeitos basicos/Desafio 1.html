@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <script src="C:/Jquery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#img1").mouseenter(function(){       
+                $("#img1").animate({                // .mouseenter para quando o mouse encostar na imagem, aumentar altura e largura em 350px, utilizando o .animate
+                    height: "350px", width: "350px"
+                });
+            }).mouseleave(function(){               // .mouseleave para retornar o tamanho original quando tirar o mouse da imagem
+                $("#img1").animate({
+                    height: "300px", width: "300px"
+                });
+            });
+
+            $("#img2").mouseenter(function(){
+                $("#img2").animate({
+                    height: "350px", width: "350px"
+                });
+            }).mouseleave(function(){
+                $("#img2").animate({
+                    height: "300px", width: "300px"
+                });
+            });
+
+            $("#img3").mouseenter(function(){
+                $("#img3").animate({
+                    height: "350px", width: "350px"
+                }).mouseleave(function(){
+                    $("#img3").animate({
+                        height: "300px", width: "300px"
+                    });
+                });
+            });
+
+            $("#img4").mouseenter(function(){
+                $("#img4").animate({
+                    height: "350px", width: "350px"
+                }).mouseleave(function(){
+                    $("#img4").animate({
+                        height: "300px", width: "300px"
+                    });
+                });
+            });
+            
+        });
+
+    </script>
+    <style>
+        img{
+            margin-top: 50px;
+            height: 300px;
+            width: 300px;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" src="Imagens/articuno.jpg" alt="Articuno"> 
+    <img id="img2" src="Imagens/moltres.jpg" alt="Moltres">
+    <img id="img3" src="Imagens/zapdos.jpg" alt="Zapdos">
+    <img id="img4" src="Imagens/lugia.jpg" alt="Lugia">
+    
+
+
+
+    
+</body>
+</html>

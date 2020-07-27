@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+    <style>
+        body{
+            background-color: black;
+            color: crimson;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        let media = new Array();
+        let aluno = new Array();
+        let qtd;
+        let i;
+
+
+        qtd = prompt("Quantos alunos deseja dar a média?", "Digite aqui");
+
+        for(i=0; i<qtd; i++){ // com estes dois arrays, é possivel armazenar Nome e Media do aluno
+            aluno[i] = (prompt("Nome do aluno:", "Digite aqui"));
+            media[i] = (prompt("Digite a média do " + aluno[i], "Digite aqui"));
+
+            if(media[i] >= 7){
+                document.write(aluno[i] + " está aprovado!" + "<br>");
+            }else{
+                document.write(aluno[i] + " está reprovado!" + "<br>");
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

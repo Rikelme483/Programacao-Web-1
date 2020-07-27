@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        div{
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 40px;
+            
+        }
+    </style>
+    <script src="C:/Jquery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#dark").click(function(){
+                $("#corpo").css({ 
+                    backgroundColor: "Black",
+                    color: "White",
+                    fontFamily: "Algerian"
+                    
+                });
+                $("#light").click(function(){
+                    $("#corpo").css({
+                        backgroundColor: "White",
+                        color: "Black",
+                        fontFamily: "Gigi"
+                    });
+                });
+            });
+        });
+
+
+    </script>
+</head>
+<body id="corpo">
+
+    <div id="dark">
+        Tema Dark
+    </div>  <p></p>
+
+    <div id="light">
+        Tema Light
+    </div> <p></p>
+
+    
+
+
+
+    
+</body>
+</html>

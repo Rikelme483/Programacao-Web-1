@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</Det></title>
+    <script>
+    let nota1, nota2, media;
+
+    nota1 = parseFloat(prompt("Primeira nota:" , "Digite aqui"));
+    nota2 = parseFloat(prompt("Segunda nota:" , "Digite aqui"));
+    //para calcular a média, soma-se o valor dos produtos e divide pela quantidade
+    media = (nota1 + nota2) / 2;
+    //com o comando if, o programa irá entender á partir de que nota vai aprovar o aluno e qual irá reprovar ou deixar em recuperação
+    if(media >= 7){
+        document.write("Está aprovado!");
+    }else if(media < 5){
+        document.write("Está reprovado!");
+    }else{
+        document.write("Recuperação!");
+    }
+    
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3</title>
+    <script>
+        let preço, porcentagem, desconto;
+
+        preço = parseFloat(prompt("Digite preço" , "Digite aqui"));
+        porcentagem = parseFloat(prompt("Digite a porcentagem de desconto" , "Digite aqui"));
+
+        desconto = preço * (porcentagem/100);
+        preço = preço - desconto;
+
+        document.write("O valor do desconto é " + desconto.toFixed(2) + "!<br>");
+        document.write("O preço do produto agora é " + preço.toFixed(2) + "!<br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

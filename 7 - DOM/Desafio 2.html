@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <script>
+
+        function corTitulo(cor){ // function para abrir uma função no script e executar no documento
+            let titulo = document.getElementById("titulo");
+            titulo.style.color = cor; //propriedade para mudar a cor do titulo da pagina.
+        }
+        function fundo(fundo){
+            let corpo = document.getElementById("corpo");
+            corpo.style.backgroundColor = fundo; //propriedade para mudar a cor de fundo da pagina.
+        }
+
+    </script>
+</head>
+<body id="corpo"> <!-- id "corpo" definida para o body -->
+    <h1 id="titulo"> Programação web </h1> <!-- id "titulo" definida para o texto em h1 -->
+
+    <h2> Cor do Título:  </h2>
+    <input type="button" value="Vermelho" onclick="corTitulo('Red')" >
+    <input type="button" value="Verde" onclick="corTitulo('Green')">
+    <input type="button" value="Aqua" onclick="corTitulo('#00ffff')">      <!-- botoes para mudar a cor do titulo -->
+    <input type="button" value="Amarelo" onclick="corTitulo('Yellow')">
+    <input type="button" value="Restaurar" onclick="corTitulo('Black')">
+    <br> <br>
+
+    <h2> Cor de Fundo: </h2>
+    <input type="button" value="Vermelho" onclick="fundo('Red')" >
+    <input type="button" value="Verde" onclick="fundo('Green')">
+    <input type="button" value="Aqua" onclick="fundo('#00ffff')">           <!-- botoes para mudar a cor de fundo -->
+    <input type="button" value="Amarelo" onclick="fundo('Yellow')">
+    <input type="button" value="Restaurar" onclick="fundo('White')">
+    <br> <br>
+
+
+
+
+
+    
+</body>
+</html>

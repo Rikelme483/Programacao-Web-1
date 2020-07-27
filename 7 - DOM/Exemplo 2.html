@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <style>
+        body{
+            background-color:coral;
+            font-size: 20pt;
+        }
+
+    </style>
+    <script>
+        function TituloFont(cor){
+            let titulo = document.getElementById("titulo");
+            titulo.style.color = cor;
+        }
+
+    </script>
+</head>
+<body>
+
+    <h3 id="titulo"> Página Javascript  </h3>
+    <br> Fonte do Título:
+
+    <input type="button" value="Vermelho" onclick="TituloFont('#FF0000');">
+    <input type="button" value="Azul" onclick="TituloFont('Blue');">
+    <input type="button" value="Verde" onclick="TituloFont('Green');">
+    <input type="button" value="Preto" onclick="TituloFont('#000000');">
+
+
+    
+</body>
+</html>

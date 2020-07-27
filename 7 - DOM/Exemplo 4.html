@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+    <style>
+        body{
+            background-color:coral;
+            font-size: 20pt;
+        }
+
+    </style>
+    <script>
+        function mudaCor(cor){
+            let tagP = document.getElementsByTagName("p");
+            let i = 0;
+
+            for(i = 0; i < tagP.length; i++){
+                tagP[i].style.color = cor;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <p> Programação Web </p>
+    <p> Javascript </p>
+    <p> Etec </p>
+
+    <input type="button"  value="Amarelo" onclick="mudaCor('Yellow')">
+    <input type="button"  value="Rosa" onclick="mudaCor('Pink')">
+    <input type="button"  value="Ciano" onclick="mudaCor('Cyan')">
+
+
+    
+
+
+
+    
+</body>
+</html>

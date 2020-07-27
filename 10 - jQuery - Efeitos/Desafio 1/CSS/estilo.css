@@ -1,0 +1,42 @@
+img{
+    width: 800px;
+    height: 250px;
+    border-radius: 10px;
+}
+.btn1, .btn2{
+    width: 50px;
+    height: 50px;
+}
+.btn1{
+    margin-bottom: 100px;
+}
+.btn2{
+    margin-bottom: 100px;
+}
+.btn1:hover , .btn2:hover{
+    opacity: 0.8;
+}
+.carrossel{
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #222;
+    position: relative;
+    text-align: center; 
+}
+#slider{
+    list-style: none;
+	width:800px; 
+	height:250px; 
+	margin: 0 auto;
+	padding:0; 
+	overflow: hidden; 
+    position: relative;
+    display: inline-block;
+}
+#slider li{
+    position: absolute;
+    display: none;
+}
+section{
+    margin-top: 30px;
+}

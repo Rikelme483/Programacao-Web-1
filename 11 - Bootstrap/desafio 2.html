@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c:/Bootstrap/css/bootstrap.min.css">
+    <title>Desafio 2</title>
+</head>
+<body>
+    
+    <h2 class="container"> Calculadora Responsiva </h2>
+
+    <form class="container">
+        <div>
+            <label for="num1"> Primeiro número: </label>
+            <input type="text" id="num1" class="form-control"> 
+        </div>
+
+        <div>
+            <label for="num2"> Segundo número: </label>
+            <input type="text" id="num2" class="form-control">
+        </div>
+        <br>
+
+        <input type="button" value="+" class="btn btn-info" id="btSoma">
+        <input type="button" value="-" class="btn btn-warning" id="btSubt">
+        <input type="button" value="*" class="btn btn-success" id="btMult">
+        <input type="button" value="/" class="btn btn-danger" id="btDiv">
+    </form>
+    <br>
+    <div class="container alert alert-info" id="resultado" style="display: none;">
+        
+    </div>
+
+    <script src="c:/Jquery/jquery-3.5.1.min.js"></script>
+    <script src="c:/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script  type="text/javascript" src="JS/calculadoraDesafio2.js"></script>
+</body>
+</html>

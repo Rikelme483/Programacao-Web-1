@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        fieldset{
+            border-width: 20px;
+            border-color: darkorange;
+            margin: 0 40% 0 40%
+        }
+        form{
+            margin-top: 125px;
+            color: lawngreen;
+        }
+        body{
+            background-color:black;
+        }
+        .num1, .num2{
+            width: 90px;
+        }
+       
+        
+
+
+
+    </style>
+    <script>
+        function nota(){
+            let tag = document.forms["form"];
+            let nome = tag.elements["fNome"].value;   
+            let nota1 = parseFloat(tag.elements["fNota1"].value);  // funçao nota para calcular a media do aluno dentro do formulario.
+            let nota2 = parseFloat(tag.elements["fNota2"].value);
+            let media = (nota1 + nota2) / 2;
+            tag.elements["media"].value = media.toFixed(1);
+
+            let situaçao;
+            
+                if(media >= 7){
+                    situaçao = "Aprovado!";    // comando if else para determinar se o aluno está aprovado ou não.
+                }else{
+                    situaçao = "Reprovado!";
+                }
+            tag.elements["situaçao"].value = situaçao;
+            }
+        function restaurar(){
+            
+            let tag = document.forms["form"];
+            let nota1 = parseFloat(tag.elements["fNota1"].value = "");  // funçao restaurar para reset dos valores.
+            let nota2 = parseFloat(tag.elements["fNota2"].value = "");
+            tag.elements["situaçao"].value = "";
+            tag.elements["media"].value = "";
+            tag.elements["fNome"].value = "";
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    <form action="aluno" method="POST" name="form"> <!-- formulario de media do aluno. Determinar se está aprovado ou não e notificá-lo no
+    documento. -->
+        <fieldset>
+            Nome: <input type="text" name="fNome" id="nome" placeholder="Digite seu Nome" required maxlength="15"> <p></p>
+            Nota 1: <input class="num1" type="number" name="fNota1" id="nota1" min="0" max="10" placeholder="Sua nota"  required> <p></p>
+            Nota 2: <input class="num2" type="number" name="fNota2" id="nota2"  min="0" max="10" placeholder="Sua nota"  required> <p></p>
+            <input type="button" value="Média" onclick="nota('Aprovado!')">
+            <input type="button" value="Reset" onclick="restaurar()"> <br> <br>
+
+            Resultado: <br>
+            <input type="text" name="media" value="" readonly > <br> <br>
+            Situação: <br>
+            <input type="text" name="situaçao" id="" readonly value="">
+
+        </fieldset>
+    </form>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <script src="C:/Jquery/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <script>
+        $(document).ready(function(){
+            $("#img1").ready(function(){
+                $("#img1").fadeTo(0.1, 0.3) // comando ("#img1").ready para ver a imagem carregada
+            }).mouseenter(function(){       // comando ("#img1").fadeTo para colocar a imagem com opacidade de apenas 0.3
+                $("#img1").fadeTo(300, 1)   // .mouseenter para transformar a imagem para opacidade 1 num tempo de 300 milisegundos
+            }).mouseleave(function(){       // .mouseleave para recolocar a imagem para opacidade de 0.3
+                $("#img1").fadeTo(300, 0.3)
+            });
+
+            $("#img2").ready(function(){
+                $("#img2").fadeTo(0.1, 0.3)
+            }).mouseenter(function(){
+                $("#img2").fadeTo(300, 1)
+            }).mouseleave(function(){
+                $("#img2").fadeTo(300, 0.3)
+            });
+
+            $("#img3").ready(function(){
+                $("#img3").fadeTo(0.1, 0.3)
+            }).mouseenter(function(){
+                $("#img3").fadeTo(300, 1)
+            }).mouseleave(function(){
+                $("#img3").fadeTo(300, 0.3)
+            });
+
+            $("#img4").ready(function(){
+                $("#img4").fadeTo(0.1, 0.3)
+            }).mouseenter(function(){
+                $("#img4").fadeTo(300, 1)
+            }).mouseleave(function(){
+                $("#img4").fadeTo(300, 0.3)
+            });
+
+        });
+    </script>
+    <style>
+         img{
+            margin-top: 50px;
+            height: 300px;
+            width: 300px;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" src="Imagens/entei.jpg" alt="Entei">
+    <img id="img2" src="Imagens/raikou.png" alt="Raikou">
+    <img id="img3" src="Imagens/suicune.jpg" alt="Suicune">
+    <img id="img4" src="Imagens/hooh.png" alt="Ho-Oh">
+
+    
+</body>
+</html>

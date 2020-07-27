@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <script>
+        let num1, num2, opçao, soma, subt, mult, div;
+        //prompts para usuario digitar seus numeros e opções desejadas
+        num1 = parseFloat(prompt("Digite o primeiro número:" , "Digite aqui"));
+        num2 = parseFloat(prompt("Digite o segundo número:" , "Digite aqui"));
+        //usei a a tag alert para mostrar as opções disponíveis para o usuário
+        alert("Opções: 1- Soma, 2- Subtração 3- Multiplicação, 4- Divisão");
+        opçao = parseFloat(prompt("Qual opção deseja?"));
+
+        //para determinada opção que ele digitar, irá aparecer o cálculo desejado na tela usando a ferramenta switch
+        switch(opçao){
+            case 1:
+            soma = num1 + num2;
+            document.write(num1 + " + " + num2 + " é: " + soma);
+            break;
+            case 2:
+            subt = num1 - num2;
+            document.write(num1 + " - " + num2 + " é: " + subt);
+            break;
+            case 3:
+            mult = num1 * num2;
+            document.write(num1 + " * " + num2 + " é: " + mult);
+            break;
+            case 4:
+            div = num1 / num2;
+            document.write(num1 + " / " + num2 + " é: " + div);
+            break;
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
